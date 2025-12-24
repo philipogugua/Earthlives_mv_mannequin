@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium retail display solutions - Mannequins, hangers, racks, and head forms from EarthLives">
+    <meta name="theme-color" content="#DAA520">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="EarthLives">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>EarthLives Mannequins - Premium Retail Displays</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-7.1.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="letter" style="animation-delay: 0s;">E</span>
+                <span class="letter" style="animation-delay: 0.1s;">a</span>
+                <span class="letter" style="animation-delay: 0.2s;">r</span>
+                <span class="letter" style="animation-delay: 0.3s;">t</span>
+                <span class="letter" style="animation-delay: 0.4s;">h</span>
+                <span class="letter" style="animation-delay: 0.5s;">L</span>
+                <span class="letter" style="animation-delay: 0.6s;">i</span>
+                <span class="letter" style="animation-delay: 0.7s;">v</span>
+                <span class="letter" style="animation-delay: 0.8s;">e</span>
+                <span class="letter" style="animation-delay: 0.9s;">s</span>
+            </div>
+            <div class="preloader-spinner">
+                <div class="spinner-circle"></div>
+            </div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+    
+    <!-- Offline Indicator -->
+    <div id="offline-indicator" class="offline-indicator" style="display:none;">
+        <i class="fas fa-wifi-slash"></i> You are offline
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/images/logo.png" alt="logo" id="logo" draggable="false">
+                <span>EarthLives Mannequins</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"> <i class="fa fa-home" aria-hidden="true"></i>  Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"> <i class="fa fa-user" aria-hidden="true"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link"> <i class="fa fa-shopping-bag" aria-hidden="true"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link"> <i class="fa fa-star" aria-hidden="true"></i> Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"> <i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">EarthLives Mannequins</h1>
+            <p class="hero-subtitle">Premium Retail Display Solutions for Your Fashion Business</p>
+            <p class="hero-description">Elevate your retail space with our high-quality, eco-friendly mannequins designed for modern fashion stores.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active" style="background: goldenrod">
+                        <img src="./assets/images/imgs1.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                    <div class="carousel-slide" style="background: goldenrod">
+                        <img src="./assets/images/imgs2.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                    <div class="carousel-slide" style="background: goldenrod">
+                        <img src="./assets/images/banner2.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                    <div class="carousel-slide" style="background: goldenrod">
+                        <img src="./assets/images/imgs3.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                    <div class="carousel-slide" style="background: goldenrod">
+                        <img src="./assets/images/banner10.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                    <div class="carousel-slide" style="background: goldenrod">
+                        <img src="./assets/images/imgs4.png" alt="" draggable="false" style="width: 400px;height: 400px;" >
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About EarthLives Mannequins</h2>
+                <p>We are a leading provider of premium mannequins and retail display solutions. With over a decade of experience, we've helped thousands of fashion retailers showcase their products beautifully and effectively.</p>
+                <p>Our commitment to quality, sustainability, and innovation makes us the preferred choice for modern retail businesses worldwide.</p>
+            </div>
+            <div class="model-viewer-container">
+                <div class="model-viewer-wrapper">
+                    <img src="./assets/images/about.png" alt="banner" class="model-image" draggable="false" >
+                </div>
+                <p class="model-info">No 30 Moore Street, Main Market,Onitsha,Anambra State</p>
+            </div>
+        </div>
+        <div class="about-stats">
+            <div class="stats">
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Product Styles</p>
+                </div>
+                <div class="stat">
+                    <h3>30+</h3>
+                    <p>Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container" style="background-color: white;" >
+                        <img src="./assets/images/banner7.png" alt="Female Mannequin" class="product-image" draggable="false" style="width: 150px;height: 300px;">
+                    </div>
+                    <h3>Female Mannequins</h3>
+                    <p>Elegant and modern female mannequins with customizable poses and finishes.</p>
+                    <button class="add-btn" data-model="female" data-title="Female Mannequins" data-description="Elegant and modern female mannequins with customizable poses and finishes." data-details="Customizable poses, multiple finishes, lightweight design.">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container" style="background-color: white;" >
+                        <img src="./assets/images/banner1.png" alt="Male Mannequin" class="product-image"  draggable="false" style="width: 150px;height: 300px;" >
+                    </div>
+                    <h3>Male Mannequins</h3>
+                    <p>Professional male mannequins ideal for displaying menswear collections.</p>
+                    <button class="add-btn" data-model="male" data-title="Male Mannequins" data-description="Professional male mannequins ideal for displaying menswear collections." data-details="Ideal for menswear, sturdy base, realistic proportions.">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container" style="background-color: white;" >
+                        <img src="./assets/images/banner6.png" alt="Kids Mannequin" class="product-image" draggable="false" style="width: 150px;height: 300px;" >
+                    </div>
+                    <h3>Kids Mannequins</h3>
+                    <p>Specialized mannequins designed for children's clothing displays.</p>
+                    <button class="add-btn" data-model="kids" data-title="Kids Mannequins" data-description="Specialized mannequins designed for children's clothing displays." data-details="Child-safe materials, playful poses, easy to dress.">View Details</button>
+                </div>
+
+                <div class="product-card">  
+                    <div class="product-image-container"  style="background-color: red;">
+                        <img src="./assets/images/banner4.png" alt="Hand & Arm Forms" class="product-image" draggable="false" style="width: 450px;height: 300px;" >
+                    </div>
+                    <h3>Cloth Hanger</h3>
+                    <p>Perfect for shirts,gowns, t-shirts, and tops.</p>
+                    <button class="add-btn" data-model="hands" data-title="Cloth Hanger" data-description="Perfect for displaying shirts,gowns, t-shirts, and tops." data-details="Detailed anatomy, elegant, durable material." >View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container" style="background-color: red;" >
+                        <img src="./assets/images/banner3.png" alt="Foot Forms" class="product-image" draggable="false" style="width: 220px;height: 300px;" >
+                    </div>
+                    <h3>Cloth Rack</h3>
+                    <p>Realistic for clothing decorations,and elegent display of clothing.</p>
+                    <button class="add-btn" data-model="feet" data-title="Cloth Rack" data-description="Realistic for clothing decorations,and elegent display of clothing." data-details="True-to-life size, slip-resistant base, easy to clean.">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container" style="background-color: red;" >
+                        <img src="./assets/images/banner8.png" alt="Head Forms" class="product-image" draggable="false" style="width: 350px;height: 300px;"  >
+                    </div>
+                    <h3>Shoe Rack</h3>
+                    <p>Stylish elegent display for shoes and footwares.</p>
+                    <button class="add-btn" data-model="head" data-title="Shoe Rack" data-description="Stylish elegent display for shoes and footwares." data-details="Smooth finish, stable base, fits  accessories." >View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose EarthLives?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Made from sustainable and recyclable materials, reducing environmental impact.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Crafted with precision and attention to detail for a professional appearance.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customizable</h3>
+                    <p>Available in multiple colors, finishes, and styles to match your brand.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Shipping</h3>
+                    <p>Quick and reliable worldwide delivery with tracking on all orders.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>24/7 customer service team ready to assist with your needs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Best prices in the industry with special bulk discounts available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>No 30 Moore Street, Main Market,Onitsha, Anambra State</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+234 803 789 4994</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>earthlivesmvmannequins@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mlgrzlww" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EarthLives</h3>
+                    <p>Your trusted partner in retail display solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EarthLives Mannequins. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-button" id="whatsappBtn" title="Chat with us on WhatsApp">
+        <a href="https://wa.me/2348037894994?text=Hello%20EarthLives%20Mannequins!" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTopBtn" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+<!-- Product Details Modal -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-images-grid">
+            <img id="modal-image-1" src="" alt="Product Image 1" class="modal-product-image">
+            <img id="modal-image-2" src="" alt="Product Image 2" class="modal-product-image">
+        </div>
+        <div class="modal-details">
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <div class="modal-extra-details"></div>
+            <div class="modal-price"></div>
+        </div>
+    </div>
+
+<!-- Main JS -->
+<script src="script.js" defer></script>
+
+<!-- Noscript fallback -->
+<noscript>
+    <div style="padding: 20px; background: #fff3cd; color: #856404; border-radius: 5px; margin: 10px;">
+        <strong>Notice:</strong> JavaScript is disabled. Interactive features may not work. Please enable JavaScript.
+    </div>
+</noscript>
+</div>
